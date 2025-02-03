@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SCSS -->
+    <link rel="stylesheet" href="../build/styles/main.css">
+    <title>CommunitySound</title>
+    <!-- Fonte Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <a href="">
+            CommunitySound
+        </a>
+
+        <div class="search-container">
+            <input type="search" placeholder="Find your sound">
+            <button type="submit">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        
+        <!-- Modal de Login -->
+        <button id="open-modal">Fazer login</button>                    
+        <div id="modal">
+            <div class="modal-content">
+                <form>
+                    <fieldset>
+                        <span id="close-modal-entrar"><i class="fa-solid fa-x"></i></span>
+
+                        <legend>Entrar</legend>
+                        <div class="fieldset__inputs">
+                            <input type="text" class="inputs__input" id="nome" required> 
+                            <label for="nome" class="inputs__label">E-mail</label>
+                        </div>
+    
+                        <div class="fieldset__inputs">
+                            <input type="password" class="inputs__input" id="password" required>
+                            <label for="password" class="inputs__label" >Senha</label>
+                        </div>
+    
+                        <div class="fieldset__button">
+                            <input type="submit">
+                        </div>
+                    </fieldset>
+                </form>
+
+                <form>
+                    <fieldset>
+                        <span id="close-modal-registrar"><i class="fa-solid fa-x"></i></span>
+
+                        <legend>Cadastrar</legend>
+                        <div class="fieldset__inputs">
+                            <input type="text" class="inputs__input" id="nome" required> 
+                            <label for="nome" class="inputs__label">E-mail</label>
+                        </div>
+    
+                        <div class="fieldset__inputs">
+                            <input type="password" class="inputs__input" id="password" required>
+                            <label for="password" class="inputs__label" >Senha</label>
+                        </div>
+    
+                        <div class="fieldset__button">
+                            <input type="submit">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="section__nav">
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="">Você</a>
+                    </li>
+                    <li>
+                        <a href="">Histórico</a>
+                    </li>
+                    <li>
+                        <a href="">Playlists</a>
+                    </li>
+                    <li>
+                        <a href="">Suas músicas</a>
+                    </li>
+                    <li>
+                        <a href="">Assistir mais tarde</a>
+                    </li>
+                    <li>
+                        <a href="">Músicas com "Gostei"</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="section__sounds">
+            <div class="filter">
+                <label><input type="checkbox">Todos</label>
+                <label><input type="checkbox">Gospel</label>
+                <label><input type="checkbox">Blues</label>
+                <label><input type="checkbox">Eletrônica</label>
+                <label><input type="checkbox">Lo-fi</label>
+                <label><input type="checkbox">Todos</label>
+                <label><input type="checkbox">Gospel</label>
+                <label><input type="checkbox">Blues</label>
+                <label><input type="checkbox">Eletrônica</label>
+                <label><input type="checkbox">Lo-fi</label>
+                <label><input type="checkbox">Todos</label>
+                <label><input type="checkbox">Gospel</label>
+                <label><input type="checkbox">Blues</label>
+                <label><input type="checkbox">Eletrônica</label>
+                <label><input type="checkbox">Lo-fi</label>
+            </div>
+    
+            <div class="container__sounds">
+                <div class="sounds">
+                    <div class="sounds__img">
+                        SoundImg
+                    </div>               
+                    
+                    <div class="sounds__info">
+                        <div class="info__img-name">
+                            <div class="info__singerImg">
+                                Img
+                            </div>
+                            <p>Nome da musica</p>
+                        </div>
+    
+                        <div class="info__infos">
+                            <p>Nome do artista</p>
+                            <p>infos da musica, blablabla</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="sounds">
+                    <div class="sounds__img">
+                        SoundImg
+                    </div>               
+                    
+                    <div class="sounds__info">
+                        <div class="info__img-name">
+                            <div class="info__singerImg">
+                                Img
+                            </div>
+                            <p>Nome da musica</p>
+                        </div>
+    
+                        <div class="info__infos">
+                            <p>Nome do artista</p>
+                            <p>infos da musica, blablabla</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="sounds">
+                    <div class="sounds__img">
+                        SoundImg
+                    </div>               
+                    
+                    <div class="sounds__info">
+                        <div class="info__img-name">
+                            <div class="info__singerImg">
+                                Img
+                            </div>
+                            <p>Nome da musica</p>
+                        </div>
+    
+                        <div class="info__infos">
+                            <p>Nome do artista</p>
+                            <p>infos da musica, blablabla</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="sounds">
+                    <div class="sounds__img">
+                        SoundImg
+                    </div>               
+                    
+                    <div class="sounds__info">
+                        <div class="info__img-name">
+                            <div class="info__singerImg">
+                                Img
+                            </div>
+                            <p>Nome da musica</p>
+                        </div>
+    
+                        <div class="info__infos">
+                            <p>Nome do artista</p>
+                            <p>infos da musica, blablabla</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="sounds">
+                    <div class="sounds__img">
+                        SoundImg
+                    </div>               
+                    
+                    <div class="sounds__info">
+                        <div class="info__img-name">
+                            <div class="info__singerImg">
+                                Img
+                            </div>
+                            <p>Nome da musica</p>
+                        </div>
+    
+                        <div class="info__infos">
+                            <p>Nome do artista</p>
+                            <p>infos da musica, blablabla</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sounds">
+                    <div class="sounds__img">
+                        SoundImg
+                    </div>               
+                    
+                    <div class="sounds__info">
+                        <div class="info__img-name">
+                            <div class="info__singerImg">
+                                Img
+                            </div>
+                            <p>Nome da musica</p>
+                        </div>
+    
+                        <div class="info__infos">
+                            <p>Nome do artista</p>
+                            <p>infos da musica, blablabla</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="sounds">
+                    <div class="sounds__img">
+                        SoundImg
+                    </div>               
+                    
+                    <div class="sounds__info">
+                        <div class="info__img-name">
+                            <div class="info__singerImg">
+                                Img
+                            </div>
+                            <p>Nome da musica</p>
+                        </div>
+    
+                        <div class="info__infos">
+                            <p>Nome do artista</p>
+                            <p>infos da musica, blablabla</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="sounds">
+                    <div class="sounds__img">
+                        SoundImg
+                    </div>               
+                    
+                    <div class="sounds__info">
+                        <div class="info__img-name">
+                            <div class="info__singerImg">
+                                Img
+                            </div>
+                            <p>Nome da musica</p>
+                        </div>
+    
+                        <div class="info__infos">
+                            <p>Nome do artista</p>
+                            <p>infos da musica, blablabla</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="sounds">
+                    <div class="sounds__img">
+                        SoundImg
+                    </div>               
+                    
+                    <div class="sounds__info">
+                        <div class="info__img-name">
+                            <div class="info__singerImg">
+                                Img
+                            </div>
+                            <p>Nome da musica</p>
+                        </div>
+    
+                        <div class="info__infos">
+                            <p>Nome do artista</p>
+                            <p>infos da musica, blablabla</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="sounds">
+                    <div class="sounds__img">
+                        SoundImg
+                    </div>               
+                    
+                    <div class="sounds__info">
+                        <div class="info__img-name">
+                            <div class="info__singerImg">
+                                Img
+                            </div>
+                            <p>Nome da musica</p>
+                        </div>
+    
+                        <div class="info__infos">
+                            <p>Nome do artista</p>
+                            <p>infos da musica, blablabla</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sounds">
+                    <div class="sounds__img">
+                        SoundImg
+                    </div>               
+                    
+                    <div class="sounds__info">
+                        <div class="info__img-name">
+                            <div class="info__singerImg">
+                                Img
+                            </div>
+                            <p>Nome da musica</p>
+                        </div>
+    
+                        <div class="info__infos">
+                            <p>Nome do artista</p>
+                            <p>infos da musica, blablabla</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="sounds">
+                    <div class="sounds__img">
+                        SoundImg
+                    </div>               
+                    
+                    <div class="sounds__info">
+                        <div class="info__img-name">
+                            <div class="info__singerImg">
+                                Img
+                            </div>
+                            <p>Nome da musica</p>
+                        </div>
+    
+                        <div class="info__infos">
+                            <p>Nome do artista</p>
+                            <p>infos da musica, blablabla</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="sounds">
+                    <div class="sounds__img">
+                        SoundImg
+                    </div>               
+                    
+                    <div class="sounds__info">
+                        <div class="info__img-name">
+                            <div class="info__singerImg">
+                                Img
+                            </div>
+                            <p>Nome da musica</p>
+                        </div>
+    
+                        <div class="info__infos">
+                            <p>Nome do artista</p>
+                            <p>infos da musica, blablabla</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="sounds">
+                    <div class="sounds__img">
+                        SoundImg
+                    </div>               
+                    
+                    <div class="sounds__info">
+                        <div class="info__img-name">
+                            <div class="info__singerImg">
+                                Img
+                            </div>
+                            <p>Nome da musica</p>
+                        </div>
+    
+                        <div class="info__infos">
+                            <p>Nome do artista</p>
+                            <p>infos da musica, blablabla</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="sounds">
+                    <div class="sounds__img">
+                        SoundImg
+                    </div>               
+                    
+                    <div class="sounds__info">
+                        <div class="info__img-name">
+                            <div class="info__singerImg">
+                                Img
+                            </div>
+                            <p>Nome da musica</p>
+                        </div>
+    
+                        <div class="info__infos">
+                            <p>Nome do artista</p>
+                            <p>infos da musica, blablabla</p>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+</body>
+<script src="../src/index.js"></script>
+</html>

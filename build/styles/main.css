@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+header {
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(17, 17, 19);
+}
+header .search-container {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .search-container input {
+  width: 90%;
+  height: 40px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 17px;
+  border: 1px solid rgb(0, 255, 42);
+  border-top-left-radius: 17px;
+  border-bottom-left-radius: 17px;
+  color: white;
+  background-color: rgb(17, 17, 19);
+}
+header .search-container input::placeholder {
+  color: rgb(0, 255, 42);
+}
+header .search-container button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(17, 17, 19);
+}
+header .search-container button i {
+  width: 50px;
+  height: 40px;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(0, 255, 42);
+  border-top-right-radius: 17px;
+  border-bottom-right-radius: 17px;
+  color: rgb(0, 255, 42);
+}
+header #openLogin {
+  width: 120px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 19px;
+  border: 1px solid rgb(0, 255, 42);
+  color: white;
+  background-color: transparent;
+}
+
+#modal {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  position: fixed;
+  background-color: rgb(17, 17, 19);
+}
+#modal .modal-content {
+  display: flex;
+  gap: 20px;
+}
+#modal .modal-content form fieldset {
+  width: 400px;
+  height: 600px;
+  border-radius: 12px;
+  border: 3px solid rgb(0, 255, 42);
+  background-color: rgb(17, 17, 19);
+}
+#modal .modal-content form fieldset #close-modal-entrar, #modal .modal-content form fieldset #close-modal-registrar {
+  margin-left: 90%;
+}
+#modal .modal-content form fieldset #close-modal-entrar i, #modal .modal-content form fieldset #close-modal-registrar i {
+  font-size: 22px;
+  cursor: pointer;
+  color: rgb(0, 255, 42);
+}
+#modal .modal-content form fieldset legend {
+  letter-spacing: 2px;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 30px;
+  border: 1px solid rgb(0, 255, 42);
+  color: rgb(17, 17, 19);
+  background-color: rgb(0, 255, 42);
+}
+#modal .modal-content form fieldset .fieldset__inputs {
+  position: relative;
+  margin: 20px 9px;
+}
+#modal .modal-content form fieldset .fieldset__inputs .inputs__input {
+  width: 100%;
+  height: 25px;
+  font-size: 15px;
+  letter-spacing: 2px;
+  border: none;
+  border-bottom: 1px solid rgb(0, 255, 42);
+  color: white;
+  background-color: transparent;
+}
+#modal .modal-content form fieldset .fieldset__inputs .inputs__input:focus ~ .inputs__label,
+#modal .modal-content form fieldset .fieldset__inputs .inputs__input:valid ~ .inputs__label {
+  top: -20px;
+  font-size: 12px;
+  color: rgb(0, 255, 42);
+}
+#modal .modal-content form fieldset .fieldset__inputs .inputs__label {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+  transition: 0.5s;
+  color: white;
+}
+
+section {
+  display: flex;
+  height: 93vh;
+}
+section .section__nav {
+  width: 20%;
+  padding: 20px;
+  background-color: rgb(17, 17, 19);
+}
+section .section__nav ul li {
+  margin: 20px 0;
+  list-style: none;
+}
+section .section__nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+section .section__sounds {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(17, 17, 19);
+}
+section .section__sounds .filter {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  padding-bottom: 7px;
+  gap: 9px;
+  overflow: auto;
+  white-space: nowrap;
+  color: white;
+}
+section .section__sounds .filter label {
+  font-size: 20px;
+  padding: 3px;
+  border-radius: 7px;
+  background-color: rgb(0, 255, 42);
+}
+section .section__sounds .container__sounds {
+  width: 100%;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  overflow: auto;
+}
+section .section__sounds .container__sounds .sounds {
+  width: 400px;
+  display: flex;
+  padding: 0 3px;
+  gap: 7px;
+}
+section .section__sounds .container__sounds .sounds .sounds__img {
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  background-color: rgb(0, 255, 42);
+}
+section .section__sounds .container__sounds .sounds .sounds__info {
+  color: white;
+}
+section .section__sounds .container__sounds .sounds .sounds__info .info__img-name {
+  display: flex;
+  gap: 9px;
+}
+section .section__sounds .container__sounds .sounds .sounds__info .info__img-name .info__singerImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: rgb(0, 255, 42);
+}
+section .section__sounds div::-webkit-scrollbar {
+  height: 12px;
+}
+section .section__sounds div::-webkit-scrollbar-track {
+  background: rgb(17, 17, 19);
+}
+section .section__sounds div::-webkit-scrollbar-thumb {
+  background: rgb(0, 255, 42);
+  border-radius: 12px;
+}
+section .section__sounds div::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 163, 27, 0.493);
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,82 @@
+@use "config/variaveis.scss";
+
+header {
+    height: 7vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: variaveis.$corPrimaria;
+
+    .search-container {
+        width: 600px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        input {
+            width: 90%;
+            height: 40px;
+            text-align: center;
+    
+            font-weight: bold;
+            font-size: 17px;
+    
+            border: 1px solid variaveis.$corSecundaria;
+            border-top-left-radius: 17px;
+            border-bottom-left-radius: 17px;            
+
+            color: variaveis.$textColor;
+            background-color: variaveis.$corPrimaria;
+    
+            &::placeholder {
+                color: variaveis.$corSecundaria;
+            }
+        }
+
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            cursor: pointer;
+            border: none;
+
+            background-color: variaveis.$corPrimaria;
+
+            i {
+                width: 50px;
+                height: 40px;
+
+                font-size: 17px;
+                
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                border: 1px solid variaveis.$corSecundaria;
+                border-top-right-radius: 17px;
+                border-bottom-right-radius: 17px; 
+    
+                color: variaveis.$corSecundaria;
+            }
+        }
+    }
+
+    #openLogin {
+        width: 120px;
+        height: 35px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 19px;
+        border: 1px solid variaveis.$corSecundaria;
+
+        color: variaveis.$textColor;
+        background-color: transparent;
+    }
+}
