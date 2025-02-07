@@ -22,8 +22,9 @@
 
             fieldset {
                 width: 400px;
-                height: 600px;
+                height: 400px;
 
+                position: relative;
                 border-radius: 12px;
                 border: 3px solid variaveis.$corSecundaria;
                 
@@ -88,6 +89,57 @@
                     }
                 }
                 
+                #fieldset__button-entrar, #fieldset__button-cadastrar {
+                    width: 100%;
+                    height: 45px;
+
+                    font-size: 25px;
+                    cursor: pointer;
+                    border-radius: 45px;
+                    border: 3px solid variaveis.$corPrimaria;
+
+                    background-color: variaveis.$corSecundaria;
+
+                    &:hover {
+                        border: 1px solid variaveis.$textColor;
+                        background-color: variaveis.$corSecundariaII;
+                    }
+                }
+
+                #link-cadastro {
+                    width: 100%;
+
+                    position: absolute;
+                    bottom: 0;
+                    text-align: center;
+
+                    color: variaveis.$textColor;
+
+                    p {
+                        font-size: 20px;
+                    }
+
+                    #link-cadastro__button-entrar,
+                    #link-cadastro__button-cadastrar {
+                        width: 100%;
+                        height: 40px;
+
+                        font-size: 22px;
+                        cursor: pointer;
+
+                        border: none;
+                        border-bottom-right-radius: 9px;
+                        border-bottom-left-radius: 9px;
+
+                        &:hover {
+
+                            border: 1px solid variaveis.$textColor;
+
+                            color: variaveis.$textColor;
+                            background-color: variaveis.$corPrimaria;
+                        }
+                    }
+                }
             }
         }
     }

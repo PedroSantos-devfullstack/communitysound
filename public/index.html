@@ -24,7 +24,10 @@
         </div>
         
         <!-- Modal de Login -->
-        <button id="open-modal">Fazer login</button>                    
+        <button id="open-modal">
+            <i class="fa-regular fa-circle-user"></i>
+            <p>Fazer login</p>
+        </button>                    
         <div id="modal">
             <div class="modal-content">
                 <form>
@@ -41,10 +44,13 @@
                             <input type="password" class="inputs__input" id="password" required>
                             <label for="password" class="inputs__label" >Senha</label>
                         </div>
-    
-                        <div class="fieldset__button">
-                            <input type="submit">
-                        </div>
+                        
+                        <button id="fieldset__button-entrar" type="submit">Entrar</button>
+
+                        <div id="link-cadastro">
+                            <p>Ainda não tem cadastro?</p>
+                            <button id="link-cadastro__button-cadastrar">Cadastrar</button>
+                        </div>  
                     </fieldset>
                 </form>
 
@@ -63,8 +69,11 @@
                             <label for="password" class="inputs__label" >Senha</label>
                         </div>
     
-                        <div class="fieldset__button">
-                            <input type="submit">
+                        <button id="fieldset__button-cadastrar" type="submit">Cadastrar</button>
+
+                        <div id="link-cadastro">
+                            <p>Já tem conta?</p>
+                            <button id="link-cadastro__button-entrar">Entrar</button>
                         </div>
                     </fieldset>
                 </form>
@@ -74,26 +83,43 @@
 
     <section>
         <div class="section__nav">
-
             <nav>
                 <ul>
                     <li>
-                        <a href="">Você</a>
+                        <a href="">
+                            <p>Você</p>
+                            <i class="fa-solid fa-angle-right">
+                        </i></a>
                     </li>
                     <li>
-                        <a href="">Histórico</a>
+                        <a href="">
+                            <i class="fa-solid fa-clock-rotate-left"></i>
+                            <p>Histórico</p>
+                        </a>
                     </li>
                     <li>
-                        <a href="">Playlists</a>
+                        <a href="">
+                            <i class="fa-solid fa-bars"></i>
+                            <p>Playlists</p>
+                        </a>
                     </li>
                     <li>
-                        <a href="">Suas músicas</a>
+                        <a href="">
+                            <i class="fa-solid fa-headphones-simple"></i>
+                            <p>Suas músicas</p>
+                        </a>
                     </li>
                     <li>
-                        <a href="">Assistir mais tarde</a>
+                        <a href="">
+                            <i class="fa-regular fa-clock"></i>
+                            <p>Assistir mais tarde</p>
+                        </a>
                     </li>
                     <li>
-                        <a href="">Músicas com "Gostei"</a>
+                        <a href="">
+                            <i class="fa-regular fa-thumbs-up"></i>
+                            <p>Músicas com "Gostei"</p>
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -106,28 +132,18 @@
                 <label><input type="checkbox">Blues</label>
                 <label><input type="checkbox">Eletrônica</label>
                 <label><input type="checkbox">Lo-fi</label>
-                <label><input type="checkbox">Todos</label>
-                <label><input type="checkbox">Gospel</label>
-                <label><input type="checkbox">Blues</label>
-                <label><input type="checkbox">Eletrônica</label>
-                <label><input type="checkbox">Lo-fi</label>
-                <label><input type="checkbox">Todos</label>
-                <label><input type="checkbox">Gospel</label>
-                <label><input type="checkbox">Blues</label>
-                <label><input type="checkbox">Eletrônica</label>
-                <label><input type="checkbox">Lo-fi</label>
             </div>
     
-            <div class="container__sounds">
+            <div class="container__sounds">            
                 <div class="sounds">
                     <div class="sounds__img">
-                        SoundImg
+                        
                     </div>               
                     
                     <div class="sounds__info">
                         <div class="info__img-name">
                             <div class="info__singerImg">
-                                Img
+                                
                             </div>
                             <p>Nome da musica</p>
                         </div>
@@ -138,16 +154,16 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="sounds">
                     <div class="sounds__img">
-                        SoundImg
+                        
                     </div>               
                     
                     <div class="sounds__info">
                         <div class="info__img-name">
                             <div class="info__singerImg">
-                                Img
+                                
                             </div>
                             <p>Nome da musica</p>
                         </div>
@@ -158,16 +174,16 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="sounds">
                     <div class="sounds__img">
-                        SoundImg
+                        
                     </div>               
                     
                     <div class="sounds__info">
                         <div class="info__img-name">
                             <div class="info__singerImg">
-                                Img
+                                
                             </div>
                             <p>Nome da musica</p>
                         </div>
@@ -178,16 +194,16 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="sounds">
                     <div class="sounds__img">
-                        SoundImg
+                        
                     </div>               
                     
                     <div class="sounds__info">
                         <div class="info__img-name">
                             <div class="info__singerImg">
-                                Img
+                                
                             </div>
                             <p>Nome da musica</p>
                         </div>
@@ -198,16 +214,16 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="sounds">
                     <div class="sounds__img">
-                        SoundImg
+                        
                     </div>               
                     
                     <div class="sounds__info">
                         <div class="info__img-name">
                             <div class="info__singerImg">
-                                Img
+                                
                             </div>
                             <p>Nome da musica</p>
                         </div>
@@ -218,15 +234,16 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="sounds">
                     <div class="sounds__img">
-                        SoundImg
+                        
                     </div>               
                     
                     <div class="sounds__info">
                         <div class="info__img-name">
                             <div class="info__singerImg">
-                                Img
+                                
                             </div>
                             <p>Nome da musica</p>
                         </div>
@@ -237,16 +254,16 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="sounds">
                     <div class="sounds__img">
-                        SoundImg
+                        
                     </div>               
                     
                     <div class="sounds__info">
                         <div class="info__img-name">
                             <div class="info__singerImg">
-                                Img
+                                
                             </div>
                             <p>Nome da musica</p>
                         </div>
@@ -257,16 +274,16 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="sounds">
                     <div class="sounds__img">
-                        SoundImg
+                        
                     </div>               
                     
                     <div class="sounds__info">
                         <div class="info__img-name">
                             <div class="info__singerImg">
-                                Img
+                                
                             </div>
                             <p>Nome da musica</p>
                         </div>
@@ -277,16 +294,16 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="sounds">
                     <div class="sounds__img">
-                        SoundImg
+                        
                     </div>               
                     
                     <div class="sounds__info">
                         <div class="info__img-name">
                             <div class="info__singerImg">
-                                Img
+                                
                             </div>
                             <p>Nome da musica</p>
                         </div>
@@ -297,16 +314,16 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="sounds">
                     <div class="sounds__img">
-                        SoundImg
+                        
                     </div>               
                     
                     <div class="sounds__info">
                         <div class="info__img-name">
                             <div class="info__singerImg">
-                                Img
+                                
                             </div>
                             <p>Nome da musica</p>
                         </div>
@@ -317,15 +334,16 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="sounds">
                     <div class="sounds__img">
-                        SoundImg
+                        
                     </div>               
                     
                     <div class="sounds__info">
                         <div class="info__img-name">
                             <div class="info__singerImg">
-                                Img
+                                
                             </div>
                             <p>Nome da musica</p>
                         </div>
@@ -336,16 +354,16 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="sounds">
                     <div class="sounds__img">
-                        SoundImg
+                        
                     </div>               
                     
                     <div class="sounds__info">
                         <div class="info__img-name">
                             <div class="info__singerImg">
-                                Img
+                                
                             </div>
                             <p>Nome da musica</p>
                         </div>
@@ -356,16 +374,16 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="sounds">
                     <div class="sounds__img">
-                        SoundImg
+                        
                     </div>               
                     
                     <div class="sounds__info">
                         <div class="info__img-name">
                             <div class="info__singerImg">
-                                Img
+                                
                             </div>
                             <p>Nome da musica</p>
                         </div>
@@ -376,16 +394,16 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="sounds">
                     <div class="sounds__img">
-                        SoundImg
+                        
                     </div>               
                     
                     <div class="sounds__info">
                         <div class="info__img-name">
                             <div class="info__singerImg">
-                                Img
+                                
                             </div>
                             <p>Nome da musica</p>
                         </div>
@@ -396,16 +414,16 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="sounds">
                     <div class="sounds__img">
-                        SoundImg
+                        
                     </div>               
                     
                     <div class="sounds__info">
                         <div class="info__img-name">
                             <div class="info__singerImg">
-                                Img
+                                
                             </div>
                             <p>Nome da musica</p>
                         </div>
@@ -416,7 +434,89 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="sounds">
+                    <div class="sounds__img">
+                        
+                    </div>               
+                    
+                    <div class="sounds__info">
+                        <div class="info__img-name">
+                            <div class="info__singerImg">
+                                
+                            </div>
+                            <p>Nome da musica</p>
+                        </div>
     
+                        <div class="info__infos">
+                            <p>Nome do artista</p>
+                            <p>infos da musica, blablabla</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sounds">
+                    <div class="sounds__img">
+                        
+                    </div>               
+                    
+                    <div class="sounds__info">
+                        <div class="info__img-name">
+                            <div class="info__singerImg">
+                                
+                            </div>
+                            <p>Nome da musica</p>
+                        </div>
+    
+                        <div class="info__infos">
+                            <p>Nome do artista</p>
+                            <p>infos da musica, blablabla</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sounds">
+                    <div class="sounds__img">
+                        
+                    </div>               
+                    
+                    <div class="sounds__info">
+                        <div class="info__img-name">
+                            <div class="info__singerImg">
+                                
+                            </div>
+                            <p>Nome da musica</p>
+                        </div>
+    
+                        <div class="info__infos">
+                            <p>Nome do artista</p>
+                            <p>infos da musica, blablabla</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sounds">
+                    <div class="sounds__img">
+                        
+                    </div>               
+                    
+                    <div class="sounds__info">
+                        <div class="info__img-name">
+                            <div class="info__singerImg">
+                                
+                            </div>
+                            <p>Nome da musica</p>
+                        </div>
+    
+                        <div class="info__infos">
+                            <p>Nome do artista</p>
+                            <p>infos da musica, blablabla</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            
             </div>
         </div>
     </section>

@@ -7,19 +7,32 @@ section {
     .section__nav {
         width: 20%;
 
-        padding: 20px;
-
+        
         background-color: variaveis.$corPrimaria;
-
+        
         ul {
+
             li {
                 margin: 20px 0;
                 list-style: none;
+
+                margin: 25px;
                 
                 a {
+                    display: flex;
+
                     text-decoration: none;
+                    gap: 12px;
 
                     color: variaveis.$textColor;
+
+                    p {
+                        font-size: 19px;
+                    }
+
+                    i {
+                        font-size: 24px;
+                    }
                 }
             }
         }
@@ -35,7 +48,7 @@ section {
     
         .filter {
             width: 100%;
-            height: 50px;
+            height: 70px;
     
             display: flex;
             align-items: center;
@@ -47,11 +60,9 @@ section {
             overflow: auto;
             white-space: nowrap;
     
-            color: variaveis.$textColor;
-    
             label {
                 font-size: 20px;
-                padding: 3px;
+                padding: 3px 12px;
                 border-radius: 7px;
     
                 background-color: variaveis.$corSecundaria;
@@ -60,24 +71,24 @@ section {
     
         .container__sounds {
             width: 100%;
-            height: 500px;
-    
+            height: 100vh;
+
             display: grid;
-            grid-template-columns: repeat(4, 1fr); 
-    
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 9px;
+
+
             overflow: auto;
-    
             .sounds {
                 width: 400px;
     
                 display: flex;
-    
+                gap: 15px;
                 padding: 0 3px;
-                gap: 7px;
     
                 .sounds__img {
-                    width: 100px;
-                    height: 100px;       
+                    width: 30%;
+                    height: 150px;       
         
                     border-radius: 12px;
         
@@ -85,6 +96,12 @@ section {
                 }
     
                 .sounds__info {
+                    width: 70%;
+
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+
                     color: variaveis.$textColor;
     
                     .info__img-name {
@@ -103,23 +120,6 @@ section {
                     }                
                 }
             }
-        }
-    
-        div::-webkit-scrollbar {
-            height: 12px;
-        }
-    
-        div::-webkit-scrollbar-track {
-            background: variaveis.$corPrimaria;
-        }
-    
-        div::-webkit-scrollbar-thumb {
-            background: variaveis.$corSecundaria; 
-            border-radius: 12px;
-        }
-    
-        div::-webkit-scrollbar-thumb:hover {
-            background: variaveis.$corSecundariaII;
         }
     }
 }

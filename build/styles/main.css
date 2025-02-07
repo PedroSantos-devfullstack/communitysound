@@ -10,7 +10,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: rgb(17, 17, 19);
+  background-color: rgb(8, 8, 24);
 }
 header .search-container {
   width: 600px;
@@ -28,7 +28,7 @@ header .search-container input {
   border-top-left-radius: 17px;
   border-bottom-left-radius: 17px;
   color: white;
-  background-color: rgb(17, 17, 19);
+  background-color: rgb(8, 8, 24);
 }
 header .search-container input::placeholder {
   color: rgb(0, 255, 42);
@@ -39,7 +39,7 @@ header .search-container button {
   justify-content: center;
   cursor: pointer;
   border: none;
-  background-color: rgb(17, 17, 19);
+  background-color: rgb(8, 8, 24);
 }
 header .search-container button i {
   width: 50px;
@@ -53,16 +53,20 @@ header .search-container button i {
   border-bottom-right-radius: 17px;
   color: rgb(0, 255, 42);
 }
-header #openLogin {
+header #open-modal {
   width: 120px;
-  height: 35px;
   display: flex;
-  align-items: center;
+  align-content: center;
   justify-content: center;
+  padding: 5px;
+  gap: 5px;
   border-radius: 19px;
   border: 1px solid rgb(0, 255, 42);
   color: white;
   background-color: transparent;
+}
+header #open-modal i {
+  font-size: 19px;
 }
 
 #modal {
@@ -73,7 +77,7 @@ header #openLogin {
   justify-content: center;
   top: 0;
   position: fixed;
-  background-color: rgb(17, 17, 19);
+  background-color: rgb(8, 8, 24);
 }
 #modal .modal-content {
   display: flex;
@@ -81,10 +85,11 @@ header #openLogin {
 }
 #modal .modal-content form fieldset {
   width: 400px;
-  height: 600px;
+  height: 400px;
+  position: relative;
   border-radius: 12px;
   border: 3px solid rgb(0, 255, 42);
-  background-color: rgb(17, 17, 19);
+  background-color: rgb(8, 8, 24);
 }
 #modal .modal-content form fieldset #close-modal-entrar, #modal .modal-content form fieldset #close-modal-registrar {
   margin-left: 90%;
@@ -101,7 +106,7 @@ header #openLogin {
   text-align: center;
   border-radius: 30px;
   border: 1px solid rgb(0, 255, 42);
-  color: rgb(17, 17, 19);
+  color: rgb(8, 8, 24);
   background-color: rgb(0, 255, 42);
 }
 #modal .modal-content form fieldset .fieldset__inputs {
@@ -132,6 +137,45 @@ header #openLogin {
   transition: 0.5s;
   color: white;
 }
+#modal .modal-content form fieldset #fieldset__button-entrar, #modal .modal-content form fieldset #fieldset__button-cadastrar {
+  width: 100%;
+  height: 45px;
+  font-size: 25px;
+  cursor: pointer;
+  border-radius: 45px;
+  border: 3px solid rgb(8, 8, 24);
+  background-color: rgb(0, 255, 42);
+}
+#modal .modal-content form fieldset #fieldset__button-entrar:hover, #modal .modal-content form fieldset #fieldset__button-cadastrar:hover {
+  border: 1px solid white;
+  background-color: rgb(0, 148, 25);
+}
+#modal .modal-content form fieldset #link-cadastro {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: white;
+}
+#modal .modal-content form fieldset #link-cadastro p {
+  font-size: 20px;
+}
+#modal .modal-content form fieldset #link-cadastro #link-cadastro__button-entrar,
+#modal .modal-content form fieldset #link-cadastro #link-cadastro__button-cadastrar {
+  width: 100%;
+  height: 40px;
+  font-size: 22px;
+  cursor: pointer;
+  border: none;
+  border-bottom-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+}
+#modal .modal-content form fieldset #link-cadastro #link-cadastro__button-entrar:hover,
+#modal .modal-content form fieldset #link-cadastro #link-cadastro__button-cadastrar:hover {
+  border: 1px solid white;
+  color: white;
+  background-color: rgb(8, 8, 24);
+}
 
 section {
   display: flex;
@@ -139,26 +183,34 @@ section {
 }
 section .section__nav {
   width: 20%;
-  padding: 20px;
-  background-color: rgb(17, 17, 19);
+  background-color: rgb(8, 8, 24);
 }
 section .section__nav ul li {
   margin: 20px 0;
   list-style: none;
+  margin: 25px;
 }
 section .section__nav ul li a {
+  display: flex;
   text-decoration: none;
+  gap: 12px;
   color: white;
+}
+section .section__nav ul li a p {
+  font-size: 19px;
+}
+section .section__nav ul li a i {
+  font-size: 24px;
 }
 section .section__sounds {
   width: 80%;
   display: flex;
   flex-direction: column;
-  background-color: rgb(17, 17, 19);
+  background-color: rgb(8, 8, 24);
 }
 section .section__sounds .filter {
   width: 100%;
-  height: 50px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -167,34 +219,38 @@ section .section__sounds .filter {
   gap: 9px;
   overflow: auto;
   white-space: nowrap;
-  color: white;
 }
 section .section__sounds .filter label {
   font-size: 20px;
-  padding: 3px;
+  padding: 3px 12px;
   border-radius: 7px;
   background-color: rgb(0, 255, 42);
 }
 section .section__sounds .container__sounds {
   width: 100%;
-  height: 500px;
+  height: 100vh;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 9px;
   overflow: auto;
 }
 section .section__sounds .container__sounds .sounds {
   width: 400px;
   display: flex;
+  gap: 15px;
   padding: 0 3px;
-  gap: 7px;
 }
 section .section__sounds .container__sounds .sounds .sounds__img {
-  width: 100px;
-  height: 100px;
+  width: 30%;
+  height: 150px;
   border-radius: 12px;
   background-color: rgb(0, 255, 42);
 }
 section .section__sounds .container__sounds .sounds .sounds__info {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   color: white;
 }
 section .section__sounds .container__sounds .sounds .sounds__info .info__img-name {
@@ -206,19 +262,6 @@ section .section__sounds .container__sounds .sounds .sounds__info .info__img-nam
   height: 40px;
   border-radius: 40px;
   background-color: rgb(0, 255, 42);
-}
-section .section__sounds div::-webkit-scrollbar {
-  height: 12px;
-}
-section .section__sounds div::-webkit-scrollbar-track {
-  background: rgb(17, 17, 19);
-}
-section .section__sounds div::-webkit-scrollbar-thumb {
-  background: rgb(0, 255, 42);
-  border-radius: 12px;
-}
-section .section__sounds div::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 163, 27, 0.493);
 }
 
 /*# sourceMappingURL=main.css.map */

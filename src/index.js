@@ -31,12 +31,4 @@
 
 // Rolamento scroll da container__sounds
 
-    const scrollDiv = document.querySelector('.container__sounds');
-
-    scrollDiv.addEventListener('wheel', (e) => {
-        if (e.deltaY !== 0) {
-        scrollDiv.scrollLeft += e.deltaY;
-        e.preventDefault();
-        }
-    });
 

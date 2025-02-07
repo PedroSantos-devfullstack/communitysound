@@ -65,18 +65,23 @@ header {
         }
     }
 
-    #openLogin {
+    #open-modal {
         width: 120px;
-        height: 35px;
 
         display: flex;
-        align-items: center;
+        align-content: center;
         justify-content: center;
 
+        padding: 5px;
+        gap: 5px;
         border-radius: 19px;
         border: 1px solid variaveis.$corSecundaria;
 
         color: variaveis.$textColor;
         background-color: transparent;
+
+        i {
+            font-size: 19px;
+        }
     }
 }
